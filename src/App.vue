@@ -34,7 +34,7 @@
       
       <div>
         <label>Tamaño: </label>
-        <input v-model="cat.size" type="number" placeholder="Ingrese un número">
+        <input v-model="cat.size" type="number" step="100" min="100" max="900" placeholder="Ingrese un número">
         <br><br>
         <button type="submit">Obtener mi gatito</button>
       </div>
@@ -58,7 +58,7 @@ export default {
       color: "",
       size: "",
     },
-    filters: ['blur', 'mono', 'sepia', 'negative', 'paint', 'pixel'],
+    filters: ['blur', 'mono', 'sepia', 'negative', 'paint'],
     colors: [
       {
         "color":"red",
